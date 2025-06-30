@@ -1,4 +1,8 @@
-import { ParserOptions } from "@babel/parser";
+// Parser options for oxc-parser
+interface ParserOptions {
+  filename?: string;
+  sourceType?: "module" | "script";
+}
 
 interface DefaultSpec {
   default: string;
