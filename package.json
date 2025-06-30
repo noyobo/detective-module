@@ -28,6 +28,9 @@
   ],
   "author": "noyobo <noyobo@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "bugs": {
     "url": "https://github.com/noyobo/node-detective-module/issues"
   },
