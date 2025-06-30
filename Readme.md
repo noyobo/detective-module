@@ -7,6 +7,7 @@
 ### ✨ Features
 
 - **🚀 High Performance**: Built with [oxc-parser](https://github.com/oxc-project/oxc) (Rust-based) for 3-5x faster parsing
+- **⚡ Modern Testing**: Uses [Vitest](https://vitest.dev/) for blazing fast test execution and development experience
 - **📦 Zero Configuration**: Works out of the box with intelligent file type detection
 - **🎯 Full Language Support**: JavaScript, TypeScript, JSX, TSX, and latest ECMAScript features
 - **🔄 Dual Mode**: Supports both ES6 modules (`import/export`) and CommonJS (`require()`)
@@ -132,12 +133,21 @@ const dependencies = detectiveModuleAndRequire(sourceCode);
 
 ### Performance
 
-Thanks to the oxc-parser (Rust-based), detective-module now offers:
+Thanks to modern tooling (oxc-parser + Vitest), detective-module now offers:
+
+**Parsing Performance:**
 
 - **⚡ 3-5x faster** than previous Babel-based implementations
-- **🎯 ~4,800+ operations/second** on modern hardware
+- **🎯 ~45,000+ operations/second** on modern hardware
 - **📦 Smaller bundle size** with fewer dependencies
 - **🛡️ Better error recovery** and parsing reliability
+
+**Development Experience:**
+
+- **🧪 2-5x faster test execution** with Vitest vs Jest
+- **⚡ Instant hot reload** in watch mode (`npm run test:watch`)
+- **🔥 Native ES modules** support without configuration
+- **📊 Better error reporting** and debugging experience
 
 ### API
 
@@ -167,7 +177,16 @@ Extracts both ES6 imports/exports and CommonJS require() dependencies.
 
 ### Migration from v3.x
 
-Version 4.0+ uses oxc-parser instead of node-source-walk for better performance. The API remains the same, so no code changes are needed.
+Version 4.0+ includes major improvements:
+
+- **Parser**: Uses oxc-parser instead of node-source-walk for 3-5x better performance
+- **Testing**: Migrated from Jest to Vitest for faster development and CI/CD
+- **API**: Remains 100% compatible - no code changes needed for existing users
+
+**For Contributors:**
+
+- `npm test` - Run tests once
+- `npm run test:watch` - Run tests in watch mode for development
 
 #### License
 

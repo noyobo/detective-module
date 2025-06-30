@@ -1,8 +1,8 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`detective-es6 accepts an ast 1`] = `[]`;
+exports[`detective-es6 > accepts an ast 1`] = `[]`;
 
-exports[`detective-es6 case1 1`] = `
+exports[`detective-es6 > case1 1`] = `
 [
   {
     "default": "React",
@@ -26,7 +26,7 @@ exports[`detective-es6 case1 1`] = `
 ]
 `;
 
-exports[`detective-es6 case2 1`] = `
+exports[`detective-es6 > case2 1`] = `
 [
   {
     "default": "Cookies",
@@ -35,7 +35,7 @@ exports[`detective-es6 case2 1`] = `
 ]
 `;
 
-exports[`detective-es6 handles default imports 1`] = `
+exports[`detective-es6 > handles default imports 1`] = `
 [
   {
     "default": "foo",
@@ -44,7 +44,7 @@ exports[`detective-es6 handles default imports 1`] = `
 ]
 `;
 
-exports[`detective-es6 handles multiple imports 1`] = `
+exports[`detective-es6 > handles multiple imports 1`] = `
 [
   {
     "members": [
@@ -65,7 +65,7 @@ exports[`detective-es6 handles multiple imports 1`] = `
 ]
 `;
 
-exports[`detective-es6 impoet ImportNamespaceSpecifier the dependencies of es6 modules 1`] = `
+exports[`detective-es6 > impoet ImportNamespaceSpecifier the dependencies of es6 modules 1`] = `
 [
   {
     "default": "Abc",
@@ -88,7 +88,7 @@ exports[`detective-es6 impoet ImportNamespaceSpecifier the dependencies of es6 m
 ]
 `;
 
-exports[`detective-es6 retrieves the dependencies of es6 modules 1`] = `
+exports[`detective-es6 > retrieves the dependencies of es6 modules 1`] = `
 [
   {
     "alias": "All",
@@ -99,7 +99,7 @@ exports[`detective-es6 retrieves the dependencies of es6 modules 1`] = `
 ]
 `;
 
-exports[`detective-es6 retrieves the re-export * dependencies of es6 modules 1`] = `
+exports[`detective-es6 > retrieves the re-export * dependencies of es6 modules 1`] = `
 [
   {
     "name": "mylib",
@@ -107,7 +107,7 @@ exports[`detective-es6 retrieves the re-export * dependencies of es6 modules 1`]
 ]
 `;
 
-exports[`detective-es6 retrieves the re-export dependencies alias of es6 modules 1`] = `
+exports[`detective-es6 > retrieves the re-export dependencies alias of es6 modules 1`] = `
 [
   {
     "members": [
@@ -121,7 +121,7 @@ exports[`detective-es6 retrieves the re-export dependencies alias of es6 modules
 ]
 `;
 
-exports[`detective-es6 retrieves the re-export dependencies of es6 modules 1`] = `
+exports[`detective-es6 > retrieves the re-export dependencies of es6 modules 1`] = `
 [
   {
     "members": [
@@ -139,9 +139,9 @@ exports[`detective-es6 retrieves the re-export dependencies of es6 modules 1`] =
 ]
 `;
 
-exports[`detective-es6 returns an empty list for non-es6 modules 1`] = `[]`;
+exports[`detective-es6 > returns an empty list for non-es6 modules 1`] = `[]`;
 
-exports[`detective-es6 support typescript 1`] = `
+exports[`detective-es6 > support typescript 1`] = `
 [
   {
     "default": "foo",
@@ -150,9 +150,9 @@ exports[`detective-es6 support typescript 1`] = `
 ]
 `;
 
-exports[`detective-module-and-require accepts an ast 1`] = `[]`;
+exports[`detective-module-and-require > accepts an ast 1`] = `[]`;
 
-exports[`detective-module-and-require case1 1`] = `
+exports[`detective-module-and-require > case1 1`] = `
 [
   {
     "default": "React",
@@ -176,7 +176,7 @@ exports[`detective-module-and-require case1 1`] = `
 ]
 `;
 
-exports[`detective-module-and-require case2 1`] = `
+exports[`detective-module-and-require > case2 1`] = `
 [
   {
     "default": "Cookies",
@@ -185,7 +185,7 @@ exports[`detective-module-and-require case2 1`] = `
 ]
 `;
 
-exports[`detective-module-and-require handles default imports 1`] = `
+exports[`detective-module-and-require > handles default imports 1`] = `
 [
   {
     "default": "foo",
@@ -194,7 +194,7 @@ exports[`detective-module-and-require handles default imports 1`] = `
 ]
 `;
 
-exports[`detective-module-and-require handles multiple imports 1`] = `
+exports[`detective-module-and-require > handles multiple imports 1`] = `
 [
   {
     "members": [
@@ -215,7 +215,7 @@ exports[`detective-module-and-require handles multiple imports 1`] = `
 ]
 `;
 
-exports[`detective-module-and-require impoet ImportNamespaceSpecifier the dependencies of es6 modules 1`] = `
+exports[`detective-module-and-require > impoet ImportNamespaceSpecifier the dependencies of es6 modules 1`] = `
 [
   {
     "default": "Abc",
@@ -238,7 +238,7 @@ exports[`detective-module-and-require impoet ImportNamespaceSpecifier the depend
 ]
 `;
 
-exports[`detective-module-and-require retrieves the dependencies of es6 modules 1`] = `
+exports[`detective-module-and-require > retrieves the dependencies of es6 modules 1`] = `
 [
   {
     "alias": "All",
@@ -249,7 +249,7 @@ exports[`detective-module-and-require retrieves the dependencies of es6 modules 
 ]
 `;
 
-exports[`detective-module-and-require retrieves the re-export * dependencies of es6 modules 1`] = `
+exports[`detective-module-and-require > retrieves the re-export * dependencies of es6 modules 1`] = `
 [
   {
     "name": "mylib",
@@ -257,7 +257,7 @@ exports[`detective-module-and-require retrieves the re-export * dependencies of 
 ]
 `;
 
-exports[`detective-module-and-require retrieves the re-export dependencies alias of es6 modules 1`] = `
+exports[`detective-module-and-require > retrieves the re-export dependencies alias of es6 modules 1`] = `
 [
   {
     "members": [
@@ -271,7 +271,7 @@ exports[`detective-module-and-require retrieves the re-export dependencies alias
 ]
 `;
 
-exports[`detective-module-and-require retrieves the re-export dependencies of es6 modules 1`] = `
+exports[`detective-module-and-require > retrieves the re-export dependencies of es6 modules 1`] = `
 [
   {
     "members": [
@@ -289,7 +289,7 @@ exports[`detective-module-and-require retrieves the re-export dependencies of es
 ]
 `;
 
-exports[`detective-module-and-require support non-es6 exports 1`] = `
+exports[`detective-module-and-require > support non-es6 exports 1`] = `
 [
   {
     "members": [
@@ -311,7 +311,7 @@ exports[`detective-module-and-require support non-es6 exports 1`] = `
 ]
 `;
 
-exports[`detective-module-and-require support non-es6 modules 1`] = `
+exports[`detective-module-and-require > support non-es6 modules 1`] = `
 [
   {
     "default": "bar",
@@ -320,7 +320,7 @@ exports[`detective-module-and-require support non-es6 modules 1`] = `
 ]
 `;
 
-exports[`detective-module-and-require support typescript 1`] = `
+exports[`detective-module-and-require > support typescript 1`] = `
 [
   {
     "default": "foo",
