@@ -36,6 +36,7 @@ const dependencies = detectiveModule(mySourceCode);
     default: "Abc",
     star: true,
     alias: "BBBBBB",
+    type: "module",
   },
 ];
 ```
@@ -62,6 +63,7 @@ const dependencies = detectiveModule(mySourceCode);
         alias: "bar",
       },
     ],
+    type: "module",
   },
 ];
 ```
@@ -94,6 +96,7 @@ const dependencies = detectiveModule(mySourceCode);
         alias: "Component",
       },
     ],
+    type: "module",
   },
   {
     name: "@/services/api",
@@ -103,6 +106,7 @@ const dependencies = detectiveModule(mySourceCode);
         alias: "fetchUser",
       },
     ],
+    type: "module",
   },
 ];
 ```
@@ -127,6 +131,7 @@ const dependencies = detectiveModuleAndRequire(sourceCode);
         alias: "useState",
       },
     ],
+    type: "commonjs",
   },
 ];
 ```
@@ -150,6 +155,13 @@ Thanks to modern tooling (oxc-parser + Vitest), detective-module now offers:
 - **📊 Better error reporting** and debugging experience
 
 ### API
+
+#### Dependency 类型说明
+
+每个依赖对象都包含一个 `type` 字段：
+
+- `type: "module"` —— ES6 模块（import/export）
+- `type: "commonjs"` —— CommonJS（require）
 
 #### `detectiveModule(code, options?)`
 
