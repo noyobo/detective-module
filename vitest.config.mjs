@@ -14,13 +14,6 @@ export default defineConfig({
       exclude: ["node_modules/", "test/", "*.config.js", "*.config.ts"],
     },
 
-    // Test file patterns - equivalent to Jest's testMatch
-    include: [
-      "test/**/*.js",
-      "test/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}",
-      "**/__tests__/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}",
-    ],
-
     // Files to exclude from testing
     exclude: ["node_modules/", "dist/", ".git/", ".vscode/"],
 

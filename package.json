@@ -1,45 +1,49 @@
 {
-  "name": "detective-module",
-  "version": "4.0.0",
-  "description": "Get the dependencies specifier of an es6 module",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "type": "commonjs",
-  "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/noyobo/node-detective-module.git"
-  },
-  "keywords": [
-    "detective",
-    "es6",
-    "es2015",
-    "dependencies",
-    "module",
-    "ast",
-    "import"
-  ],
-  "author": "noyobo <noyobo@gmail.com>",
-  "license": "MIT",
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/noyobo/node-detective-module/issues"
-  },
-  "homepage": "https://github.com/noyobo/node-detective-module",
-  "dependencies": {
-    "oxc-parser": "^0.75.1"
-  },
-  "devDependencies": {
-    "standard-version": "^9.5.0",
-    "vitest": "^3.2.4"
-  }
+	"name": "detective-module",
+	"version": "4.0.0",
+	"description": "Get the dependencies specifier of an es6 module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "commonjs",
+	"scripts": {
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"build": "tsup ./src/index.ts --format cjs --dts --clean",
+		"prepublishOnly": "yarn run build"
+	},
+	"files": [
+		"dist/"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/noyobo/node-detective-module.git"
+	},
+	"keywords": [
+		"detective",
+		"es6",
+		"es2015",
+		"dependencies",
+		"module",
+		"ast",
+		"import"
+	],
+	"author": "noyobo <noyobo@gmail.com>",
+	"license": "MIT",
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"bugs": {
+		"url": "https://github.com/noyobo/node-detective-module/issues"
+	},
+	"homepage": "https://github.com/noyobo/node-detective-module",
+	"dependencies": {
+		"oxc-parser": "^0.75.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.6",
+		"standard-version": "^9.5.0",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3",
+		"vitest": "^3.2.4"
+	}
 }
