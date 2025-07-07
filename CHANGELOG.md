@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/noyobo/node-detective-module/compare/v4.0.0...v4.1.0) (2025-07-07)
+
+
+### Features
+
+* enhance package.json for ES module support and build process ([134ccae](https://github.com/noyobo/node-detective-module/commit/134ccae8d0ff5357db12722b58ffb1a512fa5aec))
+* enhance TypeScript configuration and update test snapshots ([a632723](https://github.com/noyobo/node-detective-module/commit/a632723961dc9270781c4a7cbaa8798776a5ba59))
+
 ## 4.0.0 (2025-06-30)
 
 ### ⚡ Major Performance Improvements
