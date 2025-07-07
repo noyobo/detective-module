@@ -36,10 +36,10 @@
   },
   "homepage": "https://github.com/noyobo/node-detective-module",
   "dependencies": {
-    "oxc-parser": "^0.75.0"
+    "oxc-parser": "^0.75.1"
   },
   "devDependencies": {
     "standard-version": "^9.5.0",
-    "vitest": "^2.1.8"
+    "vitest": "^3.2.4"
   }
 }
